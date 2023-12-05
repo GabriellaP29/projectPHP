@@ -1,0 +1,101 @@
+
+/*allowing a new type of font family*/
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url("fonts/Quicksand-Regular.otf") format('opentype');
+}
+
+/* styling the body of the website */
+body {
+    background-color: white;
+    font-family: 'Quicksand-Regular';
+}
+
+body div#container {
+        display:inline-block;
+        min-width:300px;
+        max-width:1000px;
+}
+
+
+/*styling the div inside the header. The div contains the logo and the welcome h1*/
+div.welcome {
+    display: inline-block;
+    min-width:300px;
+    max-width:1000px;
+    background-color: yellow;
+}
+/*styling the navigation bar class named nav_bar. */
+nav.nav_bar {
+    padding:0;
+    border:none;
+    margin:0;
+}
+
+/*styling the unordered list inside the navigation bar. The navigation bar will display horizontally using the display flex and flex flow the navigation bar will wrap when the window gets smaller in size*/
+nav.nav_bar ul {
+
+    display:flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+}
+
+/*styling the list inside the unordered list on the class nav_bar with no list style */
+nav.nav_bar ul li {
+    list-style-type:none;
+}
+
+/*styling the links inside the class nav_bar */
+nav.nav_bar ul li a {
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    position: relative; left:70px;
+}
+/*when the link is visible*/
+nav.nav_bar a:link {
+    color: black;
+}
+
+/*when the link is visited the color changes*/
+
+nav.nav_bar a:visited{
+    color: #3B2300;
+}
+
+/*when the user hovers the mouse over the link it will change the style*/
+nav.nav_bar a:hover {
+    border-bottom:2px solid #FFA319;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #FA570C;
+    background-color: #fa960057;
+}
+
+/*after clicking on the link the link will display the following style*/
+nav.nav_bar a:active {
+    color: #AD6800;
+}
+
+/*using a class current_page to highlight the current page  the user is on*/
+nav.nav_bar a.current_page {
+    border: 2px dotted #fa570c4d;
+    border-radius: 10px;
+    background-color: #fa570c4d;
+}
+
+div.info {
+    margin: 10px 0;
+    min-width: 300px;
+    max-width: 1000px;
+    display: inline-block;
+}
+div.discount {
+    display: inline-block;
+
+}
+
+
+
+
