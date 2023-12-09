@@ -24,7 +24,7 @@ if (isset($_POST['Submit'])) {
 <h2>Find product based on category</h2>
 <form method="post">
  <label for="productCategory">Category</label>
- <input type="text" id="productCategory" name="productCategory">
+ <input type="text" id="productCategory" name="productCategory" placeholder="Ex: runners, boots ">
  <input type="Submit" name="Submit" value="View Results">
 </form>
 <a href="../public/products.php">Back to home</a>
