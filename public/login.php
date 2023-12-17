@@ -1,5 +1,10 @@
 <?php require_once ('config.php');
 session_start();
+if(isset($_POST['Submit'])) {
+    $Username = $_POST['username'];
+    $Password = $_POST['password'];
+}
+
 ?>
     <!DOCTYPE html>
     <html>
